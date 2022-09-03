@@ -276,7 +276,7 @@ function App() {
   useEffect(() => {
     checkIfWalletIsConnected();
     getContractInfo();
-  }, [])
+  }, [isWalletConnected])
 
   return (
     <main className="container mx-auto p-4">
