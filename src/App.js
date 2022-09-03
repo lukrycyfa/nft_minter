@@ -275,6 +275,7 @@ function App() {
 
   useEffect(() => {
     checkIfWalletIsConnected();
+    getContractInfo();
   }, [])
 
   return (
