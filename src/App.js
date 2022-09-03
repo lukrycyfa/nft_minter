@@ -363,7 +363,7 @@ function App() {
                   className="input-style"
                   onChange={handleInputChange}
                   name="tokenId"
-                  placeholder= token Id
+                  placeholder= "token Id"
                   value={inputValue.tokenId}
                 />
                 <button
@@ -392,7 +392,7 @@ function App() {
                   className="input-style"
                   onChange={handleInputChange}
                   name="tokenId"
-                  placeholder= token Id
+                  placeholder= "token Id"
                   value={inputValue.tokenId}
                 />
                 <button
@@ -410,7 +410,7 @@ function App() {
                   className="input-style"
                   onChange={handleInputChange}
                   name="nftPerAddress"
-                  placeholder= nft Per Address
+                  placeholder= "nft Per Address"
                   value={inputValue.nftPerAddress}
                 />
                 <button
@@ -429,7 +429,7 @@ function App() {
                   className="input-style"
                   onChange={handleInputChange}
                   name="nftCost"
-                  placeholder= nft Cost
+                  placeholder= "nft Cost"
                   value={inputValue.nftCost}
                 />
                 <button
@@ -447,7 +447,7 @@ function App() {
                   className="input-style"
                   onChange={handleInputChange}
                   name="maxMintAmount"
-                  placeholder= max Mint Amount
+                  placeholder= "max Mint Amount"
                   value={inputValue.maxMintAmount}
                 />
                 <button
