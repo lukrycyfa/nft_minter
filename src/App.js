@@ -54,9 +54,7 @@ function App() {
     try {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner();
-      const nftContract = new ethers.Contract(contractAddress, contractABI, signer);
-      const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-      const account = accounts[0];     
+      const nftContract = new ethers.Contract(contractAddress, contractABI, signer);   
       const nftSupply = await nftContract.MAX_SUPPLY();
       const mintPrice = await nftContract.MINT_PRICE();
       const maxmint = await nftContract.maxMintAmount();
@@ -68,7 +66,7 @@ function App() {
       setNftMaxMintAmount(maxmint);
       setNftPerAddressLimit(nftaddlimit);
       setNftMintPrice(ethers.utils.formatEther((mintPrice)));
-      if (account.toLowerCase() === owner.toLowerCase()) {
+      if (yourWalletAddress.toLowerCase() === owner.toLowerCase()) {
           setContractOwner(true)
       }      
 
