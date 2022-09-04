@@ -55,7 +55,8 @@ function App() {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner();
       const nftContract = new ethers.Contract(contractAddress, contractABI, signer);
-      const [account] = await window.ethereum.request({ method: 'eth_requestAccounts' });      
+      const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+      const account = accounts[0];     
       const nftSupply = await nftContract.MAX_SUPPLY();
       const mintPrice = await nftContract.MINT_PRICE();
       const maxmint = await nftContract.maxMintAmount();
@@ -336,124 +337,7 @@ function App() {
         <div className="mt-5">
           <p className="text-amber-400"><span className="font-bold text-white">NFT Supply: </span>{nftSupply}</p>
         </div>
-      </section>
-        {contractOwner && (
-          <section>
-            <div className="mt-10 mb-10">
-              <form className="form-style">
-                <button
-                  className="btn-purple"
-                  onClick={withdrawPayment}>
-                  Withdraw Payments
-                </button>
-              <span className="mr-5"><strong></strong> {withdrawStatus} </span>  
-              </form>
-            </div>
-            <div className="mt-10 mb-10">
-              <form className="form-style">
-                <input
-                  type="text"
-                  className="input-style"
-                  onChange={handleInputChange}
-                  name="tokenId"
-                  placeholder= "token Id"
-                  value={inputValue.tokenId}
-                />
-                <button
-                  className="btn-purple"
-                  onClick={BurnTokens}>
-                  Burn Tokens
-                </button>
-
-              <span className="mr-5"><strong></strong> {burntokenStatus} </span>
-              </form>
-            </div>
-            <div className="mt-10 mb-10">
-              <form className="form-style">
-                <button
-                  className="btn-purple"
-                  onClick={OwnerTokens}>
-                  View Tokens
-                </button>
-              <span className="mr-5"><strong></strong> {returnedtokens} </span>
-              </form>
-            </div>
-            <div className="mt-10 mb-10">
-              <form className="form-style">
-                <input
-                  type="text"
-                  className="input-style"
-                  onChange={handleInputChange}
-                  name="tokenId"
-                  placeholder= "token Id"
-                  value={inputValue.tokenId}
-                />
-                <button
-                  className="btn-purple"
-                  onClick={TokenUri}>
-                 Get Token Uri
-                </button>
-              <span className="mr-5"><strong></strong> {returnedtokenuri} </span>
-              </form>
-            </div>
-            <div className="mt-10 mb-10">
-              <form className="form-style">
-                <input
-                  type="text"
-                  className="input-style"
-                  onChange={handleInputChange}
-                  name="nftPerAddress"
-                  placeholder= "nft Per Address"
-                  value={inputValue.nftPerAddress}
-                />
-                <button
-                  className="btn-purple"
-                  onClick={NtfperAdddressValue}>
-                 Nft Per Address
-                </button>
-              <span className="mr-5"><strong></strong> {NtfperAdddressLimit} </span>
-              </form>
-            </div>
-
-            <div className="mt-10 mb-10">
-              <form className="form-style">
-                <input
-                  type="text"
-                  className="input-style"
-                  onChange={handleInputChange}
-                  name="nftCost"
-                  placeholder= "nft Cost"
-                  value={inputValue.nftCost}
-                />
-                <button
-                  className="btn-purple"
-                  onClick={MintCost}>
-                 Nft Mint Price
-                </button>
-              <span className="mr-5"><strong></strong> {nftMintPrice} </span>
-              </form>
-            </div> 
-            <div className="mt-10 mb-10">
-              <form className="form-style">
-                <input
-                  type="text"
-                  className="input-style"
-                  onChange={handleInputChange}
-                  name="maxMintAmount"
-                  placeholder= "max Mint Amount"
-                  value={inputValue.maxMintAmount}
-                />
-                <button
-                  className="btn-purple"
-                  onClick={maxMintValue}>
-                 NFT Max Mint Amount
-                </button>
-              <span className="mr-5"><strong></strong> {nftMaxMintAmount} </span>
-              </form>
-            </div> 
-                                    
-          </section>
-        )}      
+      </section>  
     </main>
   );
 }
