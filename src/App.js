@@ -292,19 +292,25 @@ function App() {
     
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
 
-                    <div className="card bg-base-100 shadow-xl col-span-1" key={nftMetaData.edition}>
-                      
-                      <figure><img src={nftMetaData.image} alt={nftMetaData.name} /></figure>
+              {
+                nftMetaData.collection.map((nftMetaData.collection) => {
+                  return (
+                    <div className="card bg-base-100 shadow-xl col-span-1" key={nftMetaData.collection.edition}>
+                      {console.log(nftMetaData.collection)}
+                      <figure><img src={nftMetaData.collection.image} alt={nftMetaData.collection.name} /></figure>
                       <div className="card-body">
-                        <h2 className="card-title text-white">{nftMetaData.name}</h2>
-                        <p className="mb-3 text-white">{nftMetaData.description}</p>
+                        <h2 className="card-title text-white">{nftMetaData.collection.name}</h2>
+                        <p className="mb-3 text-white">{nftMetaData.collection.description}</p>
                         <p className="mb-3 text-amber-400"><span className="text-white font-semibold">Mint Price:</span> {nftMintPrice} ETH</p>
                         <div className="card-actions justify-center">
                           <button className="btn btn-primary btn-wide"
-                            onClick={() => mintToken(nftMetaData.edition)}>Mint</button>
+                            onClick={() => mintToken(nftMetaData.collection.edition)}>Mint</button>
                         </div>
                       </div>
                     </div>
+                  );
+                })
+              }
             </div>
             <p className="mt-5 text-center text-white font-bold">{mintStatus}</p>
             <p className="mt-5 text-center text-amber-400	"><span className="font-bold text-white">Your Wallet Address: </span>{yourWalletAddress}</p>
