@@ -354,7 +354,9 @@ function App() {
         </div>
       </section>
         {contractOwner && (
-          <section>
+          <section className="bank-owner-section">
+
+          <h2 className="text-xl border-b-2 border-indigo-500 px-10 py-4 font-bold">Community Admin Panel</h2>
             <div className="mt-10 mb-10">
               <form className="form-style">
                 <button
