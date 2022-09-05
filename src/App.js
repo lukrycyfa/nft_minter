@@ -11,8 +11,6 @@ function App() {
   const contractAddress = '0xa42b0Fe62761EE3C85f45279CD193255cf3a7a88';
   const contractABI = abi.abi;
   
-  
-  const Mymeta = Object.entries(nftMetaData);
 
   const [isWalletConnected, setIsWalletConnected] = useState(false);
   const [yourWalletAddress, setYourWalletAddress] = useState(null);
@@ -66,9 +64,12 @@ function App() {
       console.log('Total NFTS', parseInt(nftSupply));
       console.log('Mint price', parseInt(mintPrice));
       setNftSupply(parseInt(nftSupply));
-      setNftMaxMintAmount(maxmint);
-      setNftPerAddressLimit(nftaddlimit);
+      setNftMaxMintAmount(parseInt(maxmint));
+      setNftPerAddressLimit(parseInt(nftaddlimit));
       setNftMintPrice(ethers.utils.formatEther((mintPrice)));
+      if (yourWalletAddress.toLowerCase() === owner.toLowerCase()) {
+          setContractOwner(true)
+      }      
  
 
     } catch (error) {
@@ -291,16 +292,16 @@ function App() {
     
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
 
-                    <div className="card bg-base-100 shadow-xl col-span-1" key={Mymeta[3][1]}>
-
-                      <figure><img src={Mymeta[4][1]} alt={Mymeta[0][1]} /></figure>
+                    <div className="card bg-base-100 shadow-xl col-span-1" key={nftMetaData.edition}>
+                      
+                      <figure><img src={nftMetaData.image} alt={nftMetaData.name} /></figure>
                       <div className="card-body">
-                        <h2 className="card-title text-white">{Mymeta[0][1]}</h2>
-                        <p className="mb-3 text-white">{Mymeta[1][1]}</p>
+                        <h2 className="card-title text-white">{nftMetaData.name}</h2>
+                        <p className="mb-3 text-white">{nftMetaData.description}</p>
                         <p className="mb-3 text-amber-400"><span className="text-white font-semibold">Mint Price:</span> {nftMintPrice} ETH</p>
                         <div className="card-actions justify-center">
                           <button className="btn btn-primary btn-wide"
-                            onClick={() => mintToken(Mymeta[3][1])}>Mint</button>
+                            onClick={() => mintToken(nftMetaData.edition)}>Mint</button>
                         </div>
                       </div>
                     </div>
