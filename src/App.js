@@ -345,7 +345,7 @@ function App() {
           <p className="text-amber-400  "><span className="font-bold text-white">NFT Max Mint Amount: </span>{nftMaxMintAmount} ETH</p>
         </div> 
         <div className="mt-5">
-          <p className="text-amber-400  "><span className="font-bold text-white">Test: </span>{testEle} </p>
+          <p className="text-amber-400  "><span className="font-bold text-white">Testty: </span>{testEle} </p>
         </div> 
         <div className="mt-5">
           <p className="text-amber-400"><span className="font-bold text-white">NFT Supply: </span>{nftSupply}</p>
