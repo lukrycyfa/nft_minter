@@ -13,7 +13,7 @@ function App() {
  
   const [isWalletConnected, setIsWalletConnected] = useState(false);
   const [yourWalletAddress, setYourWalletAddress] = useState(null);
-  const [inputValue, setInputValue] = useState({ walletAddress: "", tokenId: "", 
+  const [inputValue, setInputValue] = useState({ walletAddress: "", tokenId: "", burntokenId:"",
     nftPerAddress: "", nftCost: "", maxMintAmount:"" });
   const [nftSupply, setNftSupply] = useState(0);
   const [nftMintPrice, setNftMintPrice] = useState(0);
@@ -108,8 +108,9 @@ function App() {
     }
   }
 
-  const withdrawPayment = async () => {
+  const withdrawPayment = async (event) => {
     try {
+      event.preventDefault();
       if (window.ethereum) {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner();
@@ -133,12 +134,13 @@ function App() {
 
   const BurnTokens = async (event) => {
     try {
+      event.preventDefault();
       if (window.ethereum) {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner();
         const nftContract = new ethers.Contract(contractAddress, contractABI, signer);
 
-        const txn = await nftContract._burn(inputValue.tokenId);
+        const txn = await nftContract._burn(inputValue.burntokenId);
         console.log("Burnning Token...");
         setBurntokenStatus("Burnning.....");
         await txn.wait();
@@ -155,8 +157,9 @@ function App() {
   }
 
 
-  const OwnerTokens = async () => {
+  const OwnerTokens = async (event) => {
     try {
+      event.preventDefault();      
       if (window.ethereum) {
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
         const account = accounts[0];
@@ -179,6 +182,7 @@ function App() {
 
   const TokenUri = async (event) => {
     try {
+      event.preventDefault();      
       if (window.ethereum) {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner();
@@ -201,6 +205,7 @@ function App() {
 
   const NtfperAdddressValue = async (event) => {
     try {
+      event.preventDefault();      
       if (window.ethereum) {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner();
@@ -226,6 +231,7 @@ function App() {
 
   const MintCost = async (event) => {
     try {
+      event.preventDefault();      
       if (window.ethereum) {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner();
@@ -251,6 +257,7 @@ function App() {
 
   const maxMintValue = async (event) => {
     try {
+      event.preventDefault();      
       if (window.ethereum) {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner();
@@ -373,9 +380,9 @@ function App() {
                   type="text"
                   className="input-style"
                   onChange={handleInputChange}
-                  name="tokenId"
+                  name="burntokenId"
                   placeholder= "token Id"
-                  value={inputValue.tokenId}
+                  value={inputValue.burntokenId}
                 />
                 <button
                   className="btn-purple"
