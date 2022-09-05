@@ -35,9 +35,15 @@ function App() {
       if (window.ethereum) {
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
         const account = accounts[0];
+        const nftContract = new ethers.Contract(contractAddress, contractABI, signer);
+        const owner = await nftContract.owner();
         setIsWalletConnected(true);
         setYourWalletAddress(account);
         console.log("Account Connected: ", account);
+        settestEle(`${owner}, ${account}`);
+        if (account.toLowerCase() === owner.toLowerCase()) {
+            setContractOwner(true)
+        }        
         getContractInfo();
 
         setOpenSeaProfile(`https://testnets.opensea.io/${account}?tab=activity`);
@@ -67,12 +73,7 @@ function App() {
       setNftMaxMintAmount(parseInt(maxmint));
       setNftPerAddressLimit(parseInt(nftaddlimit));
       setNftMintPrice(ethers.utils.formatEther((mintPrice)));
-      settestEle(`${owner}, ${yourWalletAddress}`);
-      if (yourWalletAddress === owner.toLowerCase()) {
-          setContractOwner(true)
-      }      
- 
-
+      
     } catch (error) {
       console.log(error);
     }
