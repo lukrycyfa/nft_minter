@@ -1,172 +1,34 @@
-[
+{
+  "name": "#4",
+  "description": "Expressive NFT for Cadena NFT 101 Course",
+  "external_url": "https://cadena.dev",
+  "edition": 1,
+  "image": "https://gateway.pinata.cloud/ipfs/Qmc2v6MGmT2ruL6jb1DXhfemSdu7kFVq1wKHxbKAKgh7TE",
+  "attributes": [
     {
-      "name": "#1",
-      "description": "Expressive NFT for Cadena NFT 101 Course",
-      "external_url": "https://cadena.dev",
-      "edition": 1,
-      "image": "https://gateway.pinata.cloud/ipfs/QmWypfWwcftHC9JBzAJHi6HLYvv9s7GmE5P5XkqdU57qeC",
-      "attributes": [
-        {
-          "trait_type": "Background",
-          "value": "stars#10"
-        },
-        {
-          "trait_type": "Logo",
-          "value": "cadena"
-        },
-        {
-          "trait_type": "Planet",
-          "value": "venus#20"
-        }
-      ],
-      "properties": {
-        "files": [
-          {
-            "uri": "https://gateway.pinata.cloud/ipfs/QmWypfWwcftHC9JBzAJHi6HLYvv9s7GmE5P5XkqdU57qeC",
-            "type": "image/png"
-          }
-        ],
-        "creators": [    {
-          "address": "0xC3C2e33fd0696285E09Eb73c12F9800757c2aDCf",
-          "s": 100,
-        },]
-      },
-      "compiler": "https://nft-generator.art"
+      "trait_type": "Background",
+      "value": "galaxy#10"
     },
     {
-      "name": "#2",
-      "description": "Expressive NFT for Cadena NFT 101 Course",
-      "external_url": "https://cadena.dev",
-      "edition": 2,
-      "image": "https://gateway.pinata.cloud/ipfs/QmPGNuwFZZY8TKsg8qaQyvgh5CAVafhHXu2YnHPSWZoiLT",
-      "attributes": [
-        {
-          "trait_type": "Background",
-          "value": "void#20"
-        },
-        {
-          "trait_type": "Logo",
-          "value": "cadena"
-        },
-        {
-          "trait_type": "Planet",
-          "value": "venus#20"
-        }
-      ],
-      "properties": {
-        "files": [
-          {
-            "uri": "2.png",
-            "type": "https://gateway.pinata.cloud/ipfs/QmPGNuwFZZY8TKsg8qaQyvgh5CAVafhHXu2YnHPSWZoiLT"
-          }
-        ],
-        "creators": [    {
-          "address": "0xC3C2e33fd0696285E09Eb73c12F9800757c2aDCf",
-          "s": 100,
-        },]
-      },
-      "compiler": "https://nft-generator.art"
+      "trait_type": "Logo",
+      "value": "cadena"
     },
     {
-      "name": "#3",
-      "description": "Expressive NFT for Cadena NFT 101 Course",
-      "external_url": "https://cadena.dev",
-      "edition": 3,
-      "image": "https://gateway.pinata.cloud/ipfs/QmYTM38YpmtPX4Jw1wBEU6dMsJxPQNEhSbnut2JcnBzCkj",
-      "attributes": [
-        {
-          "trait_type": "Background",
-          "value": "stars#10"
-        },
-        {
-          "trait_type": "Logo",
-          "value": "cadena"
-        },
-        {
-          "trait_type": "Planet",
-          "value": "mars#15"
-        }
-      ],
-      "properties": {
-        "files": [
-          {
-            "uri": "https://gateway.pinata.cloud/ipfs/QmYTM38YpmtPX4Jw1wBEU6dMsJxPQNEhSbnut2JcnBzCkj",
-            "type": "image/png"
-          }
-        ],
-        "creators": [    {
-          "address": "0xC3C2e33fd0696285E09Eb73c12F9800757c2aDCf",
-          "s": 100,
-        },]
-      },
-      "compiler": "https://nft-generator.art"
-    },
-    {
-      "name": "#4",
-      "description": "Expressive NFT for Cadena NFT 101 Course",
-      "external_url": "https://cadena.dev",
-      "edition": 1,
-      "image": "https://gateway.pinata.cloud/ipfs/Qmc2v6MGmT2ruL6jb1DXhfemSdu7kFVq1wKHxbKAKgh7TE",
-      "attributes": [
-        {
-          "trait_type": "Background",
-          "value": "galaxy#10"
-        },
-        {
-          "trait_type": "Logo",
-          "value": "cadena"
-        },
-        {
-          "trait_type": "Planet",
-          "value": "mars#15"
-        }
-      ],
-      "properties": {
-        "files": [
-          {
-            "uri": "https://gateway.pinata.cloud/ipfs/Qmc2v6MGmT2ruL6jb1DXhfemSdu7kFVq1wKHxbKAKgh7TE",
-            "type": "image/png"
-          }
-        ],
-        "creators": [    {
-          "address": "0xC3C2e33fd0696285E09Eb73c12F9800757c2aDCf",
-          "s": 100,
-        },]
-      },
-      "compiler": "https://nft-generator.art"
-    },
-    {
-      "name": "#5",
-      "description": "Expressive NFT for Cadena NFT 101 Course",
-      "external_url": "https://cadena.dev",
-      "edition": 5,
-      "image": "https://gateway.pinata.cloud/ipfs/Qmc2v6MGmT2ruL6jb1DXhfemSdu7kFVq1wKHxbKAKgh7TE",
-      "attributes": [
-        {
-          "trait_type": "Background",
-          "value": "galaxy#10"
-        },
-        {
-          "trait_type": "Logo",
-          "value": "cadena"
-        },
-        {
-          "trait_type": "Planet",
-          "value": "earth#10"
-        }
-      ],
-      "properties": {
-        "files": [
-          {
-            "uri": "https://gateway.pinata.cloud/ipfs/Qmc2v6MGmT2ruL6jb1DXhfemSdu7kFVq1wKHxbKAKgh7TE",
-            "type": "image/png"
-          }
-        ],
-        "creators": [    {
-          "address": "0xC3C2e33fd0696285E09Eb73c12F9800757c2aDCf",
-          "s": 100,
-        },]
-      },
-      "compiler": "https://nft-generator.art"
+      "trait_type": "Planet",
+      "value": "mars#15"
     }
-  ]
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "https://gateway.pinata.cloud/ipfs/Qmc2v6MGmT2ruL6jb1DXhfemSdu7kFVq1wKHxbKAKgh7TE",
+        "type": "image/png"
+      }
+    ],
+    "creators": [    {
+      "address": "0xC3C2e33fd0696285E09Eb73c12F9800757c2aDCf",
+      "s": 100,
+    },]
+  },
+  "compiler": "https://nft-generator.art"
+}
