@@ -1,4 +1,7 @@
-[
+{
+  "name": "Expressive NFTs",
+  "description": "",
+  "collection": [
     {
       "name": "#1",
       "description": "Expressive NFT for Cadena NFT 101 Course",
@@ -29,7 +32,7 @@
         "creators": [    {
           "address": "0xC3C2e33fd0696285E09Eb73c12F9800757c2aDCf",
           "s": 100,
-        }]
+        },]
       },
       "compiler": "https://nft-generator.art"
     },
@@ -63,7 +66,7 @@
         "creators": [    {
           "address": "0xC3C2e33fd0696285E09Eb73c12F9800757c2aDCf",
           "s": 100,
-        }]
+        },]
       },
       "compiler": "https://nft-generator.art"
     },
@@ -97,7 +100,7 @@
         "creators": [    {
           "address": "0xC3C2e33fd0696285E09Eb73c12F9800757c2aDCf",
           "s": 100,
-        }]
+        },]
       },
       "compiler": "https://nft-generator.art"
     },
@@ -131,7 +134,7 @@
         "creators": [    {
           "address": "0xC3C2e33fd0696285E09Eb73c12F9800757c2aDCf",
           "s": 100,
-        }]
+        },]
       },
       "compiler": "https://nft-generator.art"
     },
@@ -165,8 +168,9 @@
         "creators": [    {
           "address": "0xC3C2e33fd0696285E09Eb73c12F9800757c2aDCf",
           "s": 100,
-        }]
+        },]
       },
       "compiler": "https://nft-generator.art"
     }
-]
+  ]
+}
