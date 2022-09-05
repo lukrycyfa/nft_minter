@@ -1,7 +1,4 @@
-{
-  "name": "Expressive NFTs",
-  "description": "",
-  "collection": [
+[
     {
       "name": "#1",
       "description": "Expressive NFT for Cadena NFT 101 Course",
@@ -173,4 +170,3 @@
       "compiler": "https://nft-generator.art"
     }
   ]
-}
