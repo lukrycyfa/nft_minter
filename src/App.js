@@ -67,7 +67,7 @@ function App() {
       setNftMaxMintAmount(parseInt(maxmint));
       setNftPerAddressLimit(parseInt(nftaddlimit));
       setNftMintPrice(ethers.utils.formatEther((mintPrice)));
-      if (yourWalletAddress.toLowerCase() === owner.toLowerCase()) {
+      if (yourWalletAddress === owner.toLowerCase()) {
           setContractOwner(true)
       }      
  
