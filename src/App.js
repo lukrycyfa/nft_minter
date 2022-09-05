@@ -23,6 +23,7 @@ function App() {
   const [burntokenStatus, setBurntokenStatus] = useState(""); 
   const [NtfperAdddressLimit, setNftPerAddressLimit] = useState("");  
   const [returnedtokens, setReturnedtokens] = useState("");  
+  const [testEle, settestEle] = useState("");    
   const [returnedtokenuri, setReturnedtokenUri] = useState(""); 
   const [contractOwner, setContractOwner] = useState(false);     
   const [openSeaProfile, setOpenSeaProfile] = useState('');
@@ -66,6 +67,7 @@ function App() {
       setNftMaxMintAmount(parseInt(maxmint));
       setNftPerAddressLimit(parseInt(nftaddlimit));
       setNftMintPrice(ethers.utils.formatEther((mintPrice)));
+      settestEle(`${owner}, ${yourWalletAddress}`);
       if (yourWalletAddress === owner.toLowerCase()) {
           setContractOwner(true)
       }      
@@ -340,7 +342,10 @@ function App() {
         </div>
               <div className="mt-5">
           <p className="text-amber-400  "><span className="font-bold text-white">NFT Max Mint Amount: </span>{nftMaxMintAmount} ETH</p>
-        </div>  
+        </div> 
+        <div className="mt-5">
+          <p className="text-amber-400  "><span className="font-bold text-white">Test: </span>{testEle} </p>
+        </div> 
         <div className="mt-5">
           <p className="text-amber-400"><span className="font-bold text-white">NFT Supply: </span>{nftSupply}</p>
         </div>
