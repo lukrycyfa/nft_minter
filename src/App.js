@@ -10,8 +10,7 @@ function App() {
   //INSERT YOUR CONTRACT ADDRESS HERE
   const contractAddress = '0xa42b0Fe62761EE3C85f45279CD193255cf3a7a88';
   const contractABI = abi.abi;
-  
-  const Mymeta = nftMetaData.collection;
+ 
   const [isWalletConnected, setIsWalletConnected] = useState(false);
   const [yourWalletAddress, setYourWalletAddress] = useState(null);
   const [inputValue, setInputValue] = useState({ walletAddress: "", tokenId: "", 
@@ -291,20 +290,19 @@ function App() {
           <>
     
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-
               {
-                Mymeta.map((Mymeta) => {
+                nftMetaData.map((nftMetaData) => {
                   return (
-                    <div className="card bg-base-100 shadow-xl col-span-1" key={Mymeta.edition}>
-                      {console.log(Mymeta)}
-                      <figure><img src={Mymeta.image} alt={Mymeta.name} /></figure>
+                    <div className="card bg-base-100 shadow-xl col-span-1" key={nftMetaData.edition}>
+                      {console.log(nftMetaData)}
+                      <figure><img src={nftMetaData.image} alt={nftMetaData.name} /></figure>
                       <div className="card-body">
-                        <h2 className="card-title text-white">{Mymeta.name}</h2>
-                        <p className="mb-3 text-white">{Mymeta.description}</p>
+                        <h2 className="card-title text-white">{nftMetaData.name}</h2>
+                        <p className="mb-3 text-white">{nftMetaData.description}</p>
                         <p className="mb-3 text-amber-400"><span className="text-white font-semibold">Mint Price:</span> {nftMintPrice} ETH</p>
                         <div className="card-actions justify-center">
                           <button className="btn btn-primary btn-wide"
-                            onClick={() => mintToken(Mymeta.edition)}>Mint</button>
+                            onClick={() => mintToken(nftMetaData.edition)}>Mint</button>
                         </div>
                       </div>
                     </div>
