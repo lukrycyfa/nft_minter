@@ -34,6 +34,8 @@ function App() {
     try {
       if (window.ethereum) {
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const signer = provider.getSigner();        
         const account = accounts[0];
         const nftContract = new ethers.Contract(contractAddress, contractABI, signer);
         const owner = await nftContract.owner();
