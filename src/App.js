@@ -22,9 +22,9 @@ function App() {
   const [withdrawStatus, setWithdrawStatus] = useState("");
   const [burntokenStatus, setBurntokenStatus] = useState(""); 
   const [NtfperAdddressLimit, setNftPerAddressLimit] = useState("");  
-  const [returnedtokens, setReturnedtokens] = useState("");  
+  const [returnedtokens, setReturnedtokens] = useState(null);  
   const [testEle, settestEle] = useState("");    
-  const [returnedtokenuri, setReturnedtokenUri] = useState(""); 
+  const [returnedtokenuri, setReturnedtokenUri] = useState(null); 
   const [contractOwner, setContractOwner] = useState(false);     
   const [openSeaProfile, setOpenSeaProfile] = useState('');
   const [error, setError] = useState(null);
