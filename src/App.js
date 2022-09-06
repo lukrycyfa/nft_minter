@@ -169,8 +169,8 @@ function App() {
         const tokens = await nftContract.walletOfOwner(account);
         console.log("Returning Tokens...");
         setReturnedtokens("Returning.....");
-        console.log(tokens);
-        setReturnedtokens(tokens);
+        console.log(Object.entries(tokens));
+        setReturnedtokens(Object.entries(tokens));
       } else {
         console.log("Ethereum object not found, install Metamask.");
         setError("Install a MetaMask wallet to mint an Expressive NFT.");
