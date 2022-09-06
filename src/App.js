@@ -168,7 +168,9 @@ function App() {
         const nftContract = new ethers.Contract(contractAddress, contractABI, signer);
         const tokens = await nftContract.walletOfOwner(account);
         console.log("Returning Tokens...");
+        await tokens.wait();
         setReturnedtokens("Returning.....");
+        console.log(tokens);
         setReturnedtokens(tokens);
       } else {
         console.log("Ethereum object not found, install Metamask.");
@@ -190,6 +192,7 @@ function App() {
         const tokenuri = await nftContract.tokenURI(inputValue.tokenId);
         console.log("Returning Tokens Uri...");
         setReturnedtokenUri("Returning.....");
+        await tokenuri.wait();
         console.log("Returned Tokens Uri", tokenuri);
         setReturnedtokenUri(tokenuri);
       } else {
