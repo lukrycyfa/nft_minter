@@ -22,8 +22,7 @@ function App() {
   const [withdrawStatus, setWithdrawStatus] = useState("");
   const [burntokenStatus, setBurntokenStatus] = useState(""); 
   const [NtfperAdddressLimit, setNftPerAddressLimit] = useState("");  
-  const [returnedtokens, setReturnedtokens] = useState(null);  
-  const [testEle, settestEle] = useState("");    
+  const [returnedtokens, setReturnedtokens] = useState(null);      
   const [returnedtokenuri, setReturnedtokenUri] = useState(null); 
   const [contractOwner, setContractOwner] = useState(false);     
   const [openSeaProfile, setOpenSeaProfile] = useState('');
@@ -42,7 +41,6 @@ function App() {
         setIsWalletConnected(true);
         setYourWalletAddress(account);
         console.log("Account Connected: ", account);
-        settestEle(`${owner}, ${account}`);
         if (account.toLowerCase() === owner.toLowerCase()) {
             setContractOwner(true)
         }        
@@ -169,8 +167,8 @@ function App() {
         const tokens = await nftContract.walletOfOwner(account);
         console.log("Returning Tokens...");
         setReturnedtokens("Returning.....");
-        console.log(Object.entries(tokens));
-        setReturnedtokens(Object.entries(tokens));
+        console.log(tokens);
+        setReturnedtokens(tokens);
       } else {
         console.log("Ethereum object not found, install Metamask.");
         setError("Install a MetaMask wallet to mint an Expressive NFT.");
@@ -353,9 +351,6 @@ function App() {
         </div>
               <div className="mt-5">
           <p className="text-amber-400  "><span className="font-bold text-white">NFT Max Mint Amount: </span>{nftMaxMintAmount} ETH</p>
-        </div> 
-        <div className="mt-5">
-          <p className="text-amber-400  "><span className="font-bold text-white">Testty: </span>{testEle} </p>
         </div> 
         <div className="mt-5">
           <p className="text-amber-400"><span className="font-bold text-white">NFT Supply: </span>{nftSupply}</p>
