@@ -8,7 +8,7 @@ import nftMetaData from "./nft_metadata.json";
 function App() {
 
   //INSERT YOUR CONTRACT ADDRESS HERE
-  const contractAddress = '0xa42b0Fe62761EE3C85f45279CD193255cf3a7a88';
+  const contractAddress = '0x52C7ac160282459426731e75ADDd24c1a2c8c323';
   const contractABI = abi.abi;
  
   const [isWalletConnected, setIsWalletConnected] = useState(false);
