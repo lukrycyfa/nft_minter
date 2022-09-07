@@ -396,14 +396,17 @@ function App() {
                   onClick={OwnerTokens}>
                   View Tokens
                 </button>
+                {returnedtokens && (
                   {
                     Object.entries(returnedtokens).map((item, index)=> {
-                      return(<span className="mr-5"><strong></strong> 
+                      return(
+                        <span className="mr-5"><strong></strong> 
                         {'key is:- ', item[0], ' and value is:- ', item[1]}
                       </span>
                       {console.log('key is:- ', item[0], ' and value is:- ', item[1])}
                       );                       
                     })
+                  })
                   } 
               </form>
             </div>
