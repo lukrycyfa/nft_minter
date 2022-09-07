@@ -396,18 +396,10 @@ function App() {
                   onClick={OwnerTokens}>
                   View Tokens
                 </button>
-                {returnedtokens && (
-                  {
-                    returnedtokens.map((returnedtokens) => {
-                      return(
-                        <span className="mr-5"><strong></strong> 
+                      <span className="mr-5"><strong></strong> 
                         {returnedtokens}
                       </span>
                       {console.log(returnedtokens)}
-                      );                       
-                    })
-                  }
-                  )} 
               </form>
             </div>
             <div className="mt-10 mb-10">
