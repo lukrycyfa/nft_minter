@@ -398,7 +398,7 @@ function App() {
                 </button>
                 {returnedtokens && (
                   {
-                    returnedtokens.map((item, index)=> {
+                    returnedtokens.map((item, index) => {
                       return(
                         <span className="mr-5"><strong></strong> 
                         {'key is:- ', item[0], ' and value is:- ', item[1]}
@@ -406,8 +406,8 @@ function App() {
                       {console.log('key is:- ', item[0], ' and value is:- ', item[1])}
                       );                       
                     })
-                  })
-                  } 
+                  }
+                  )} 
               </form>
             </div>
             <div className="mt-10 mb-10">
