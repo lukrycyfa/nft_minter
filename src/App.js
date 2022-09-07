@@ -79,7 +79,7 @@ function App() {
     }
   }
 
-  const mintToken = async (tokenId) => {
+  const mintToken = async (tokenId, uri) => {
     try {
       if (window.ethereum) {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -87,7 +87,7 @@ function App() {
         const nftContract = new ethers.Contract(contractAddress, contractABI, signer);
 
         //INSERT THE CID FROM PINATA FROM YOUR JSON FOLDER HERE
-        const metadataURI = `https://gateway.pinata.cloud/ipfs/Qmc2v6MGmT2ruL6jb1DXhfemSdu7kFVq1wKHxbKAKgh7TE/${tokenId}.json`
+        const metadataURI = `${uri}/${tokenId}.json`
         console.log(metadataURI);
         const txn = await nftContract.safeMint(yourWalletAddress, metadataURI, {
           value: ethers.utils.parseEther('0.001'),
@@ -313,7 +313,7 @@ function App() {
                         <p className="mb-3 text-amber-400"><span className="text-white font-semibold">Mint Price:</span> {nftMintPrice} ETH</p>
                         <div className="card-actions justify-center">
                           <button className="btn btn-primary btn-wide"
-                            onClick={() => mintToken(nftMetaData.edition)}>Mint</button>
+                            onClick={() => mintToken(nftMetaData.edition, nftMetaData.image)}>Mint</button>
                         </div>
                       </div>
                     </div>
