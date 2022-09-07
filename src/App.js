@@ -396,7 +396,7 @@ function App() {
                   onClick={OwnerTokens}>
                   View Tokens
                 </button>
-                {returnedtokens && (
+                {returnedtokens ? (
                   {
                     returnedtokens.map((item, index) => {
                       return(
