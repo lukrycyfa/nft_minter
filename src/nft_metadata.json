@@ -1,28 +1,44 @@
 [
     {
-      "name": "#1",
+      "name": "#8",
       "description": "Expressive NFT for Cadena NFT 101 Course",
       "external_url": "https://cadena.dev",
-      "edition": 1,
-      "image": "https://gateway.pinata.cloud/ipfs/QmWypfWwcftHC9JBzAJHi6HLYvv9s7GmE5P5XkqdU57qeC",
+      "edition": 8,
+      "image": "https://gateway.pinata.cloud/ipfs/QmPAUV7eSa625TpZ7HsUpbhkyDZuR2hmXPe4bt7Tj1K6Ez",
       "attributes": [
         {
-          "trait_type": "Background",
-          "value": "stars#10"
+          "trait_type": "Beard and mustache",
+          "value": "8"
         },
         {
-          "trait_type": "Logo",
-          "value": "cadena"
+          "trait_type": "Bg",
+          "value": "9"
         },
         {
-          "trait_type": "Planet",
-          "value": "venus#20"
+          "trait_type": "Body",
+          "value": "5"
+        },
+        {
+          "trait_type": "Eyes",
+          "value": "1"
+        },
+        {
+          "trait_type": "Glasses",
+          "value": "3_r"
+        },
+        {
+          "trait_type": "Mouths",
+          "value": "2"
+        },
+        {
+          "trait_type": "Outfits",
+          "value": "5"
         }
       ],
       "properties": {
         "files": [
           {
-            "uri": "https://gateway.pinata.cloud/ipfs/QmWypfWwcftHC9JBzAJHi6HLYvv9s7GmE5P5XkqdU57qeC",
+            "uri": "https://gateway.pinata.cloud/ipfs/QmPAUV7eSa625TpZ7HsUpbhkyDZuR2hmXPe4bt7Tj1K6Ez",
             "type": "image/png"
           }
         ],
@@ -34,30 +50,46 @@
       "compiler": "https://nft-generator.art"
     },
     {
-      "name": "#2",
+      "name": "#7",
       "description": "Expressive NFT for Cadena NFT 101 Course",
       "external_url": "https://cadena.dev",
-      "edition": 2,
-      "image": "https://gateway.pinata.cloud/ipfs/QmPGNuwFZZY8TKsg8qaQyvgh5CAVafhHXu2YnHPSWZoiLT",
+      "edition": 7,
+      "image": "https://gateway.pinata.cloud/ipfs/QmTcw8zdX9yG8VxTmxLe6f1tWAN5nP13hotFRqQWM2jB8U",
       "attributes": [
         {
-          "trait_type": "Background",
-          "value": "void#20"
+          "trait_type": "Beard and mustache",
+          "value": "2"
         },
         {
-          "trait_type": "Logo",
-          "value": "cadena"
+          "trait_type": "Bg",
+          "value": "8"
         },
         {
-          "trait_type": "Planet",
-          "value": "venus#20"
+          "trait_type": "Body",
+          "value": "3"
+        },
+        {
+          "trait_type": "Eyes",
+          "value": "3"
+        },
+        {
+          "trait_type": "Glasses",
+          "value": "4_r"
+        },
+        {
+          "trait_type": "Mouths",
+          "value": "1"
+        },
+        {
+          "trait_type": "Outfits",
+          "value": "7"
         }
       ],
       "properties": {
         "files": [
           {
-            "uri": "2.png",
-            "type": "https://gateway.pinata.cloud/ipfs/QmPGNuwFZZY8TKsg8qaQyvgh5CAVafhHXu2YnHPSWZoiLT"
+            "uri": "https://gateway.pinata.cloud/ipfs/QmTcw8zdX9yG8VxTmxLe6f1tWAN5nP13hotFRqQWM2jB8U",
+            "type": "image/png"
           }
         ],
         "creators": [    {
@@ -68,29 +100,45 @@
       "compiler": "https://nft-generator.art"
     },
     {
-      "name": "#3",
+      "name": "#6",
       "description": "Expressive NFT for Cadena NFT 101 Course",
       "external_url": "https://cadena.dev",
-      "edition": 3,
-      "image": "https://gateway.pinata.cloud/ipfs/QmYTM38YpmtPX4Jw1wBEU6dMsJxPQNEhSbnut2JcnBzCkj",
+      "edition": 6,
+      "image": "https://gateway.pinata.cloud/ipfs/QmRvCzDPufYkxzEdbixD8UiQ2jPk8sUsQhbGwZnyuXG4Si",
       "attributes": [
         {
-          "trait_type": "Background",
-          "value": "stars#10"
+          "trait_type": "Beard and mustache",
+          "value": "2"
         },
         {
-          "trait_type": "Logo",
-          "value": "cadena"
+          "trait_type": "Bg",
+          "value": "12"
         },
         {
-          "trait_type": "Planet",
-          "value": "mars#15"
+          "trait_type": "Body",
+          "value": "2"
+        },
+        {
+          "trait_type": "Eyes",
+          "value": "5"
+        },
+        {
+          "trait_type": "Glasses",
+          "value": "2_r"
+        },
+        {
+          "trait_type": "Mouths",
+          "value": "2"
+        },
+        {
+          "trait_type": "Outfits",
+          "value": "3"
         }
       ],
       "properties": {
         "files": [
           {
-            "uri": "https://gateway.pinata.cloud/ipfs/QmYTM38YpmtPX4Jw1wBEU6dMsJxPQNEhSbnut2JcnBzCkj",
+            "uri": "https://gateway.pinata.cloud/ipfs/QmRvCzDPufYkxzEdbixD8UiQ2jPk8sUsQhbGwZnyuXG4Si",
             "type": "image/png"
           }
         ],
@@ -105,7 +153,7 @@
       "name": "#4",
       "description": "Expressive NFT for Cadena NFT 101 Course",
       "external_url": "https://cadena.dev",
-      "edition": 1,
+      "edition": 4,
       "image": "https://gateway.pinata.cloud/ipfs/Qmc2v6MGmT2ruL6jb1DXhfemSdu7kFVq1wKHxbKAKgh7TE",
       "attributes": [
         {
