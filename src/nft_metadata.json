@@ -154,7 +154,7 @@
       "description": "Expressive NFT for Cadena NFT 101 Course",
       "external_url": "https://cadena.dev",
       "edition": 4,
-      "image": "https://gateway.pinata.cloud/ipfs/Qmc2v6MGmT2ruL6jb1DXhfemSdu7kFVq1wKHxbKAKgh7TE",
+      "image": "https://gateway.pinata.cloud/ipfs/QmWcjVhJNGgZHmVZyotf2gp3Tj1jwRsaPCXycb9se8zfxT",
       "attributes": [
         {
           "trait_type": "Background",
@@ -172,7 +172,7 @@
       "properties": {
         "files": [
           {
-            "uri": "https://gateway.pinata.cloud/ipfs/Qmc2v6MGmT2ruL6jb1DXhfemSdu7kFVq1wKHxbKAKgh7TE",
+            "uri": "https://gateway.pinata.cloud/ipfs/QmWcjVhJNGgZHmVZyotf2gp3Tj1jwRsaPCXycb9se8zfxT",
             "type": "image/png"
           }
         ],
