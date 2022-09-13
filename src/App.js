@@ -176,6 +176,7 @@ function App() {
 //               console.log(`${result[count][0]}: ${result[count][1]}`,);
 //              render.push({result[count][0]: result[count][1]});                       
 //            }
+       
         result.map((item, index)=>{
                     console.log('key is:- ', item[0], ' and value is:- ', item[1]);
                         render.push({"+" : `${item[1]}`}); 
@@ -429,9 +430,13 @@ function App() {
                   onClick={TokenUri}>
                  Get Token Uri
                 </button>
-
-                    <span className="mr-5"><strong></strong> {returnedtokenuri}</span>
-              
+                {
+                  returnedtokenuri.map((returnedtokenuri)=>{
+                    console.log({returnedtokenuri[0]}:{returnedtokenuri[1]});
+                        
+                  <span className="mr-5"><strong></strong> {returnedtokenuri[0]}:{returnedtokenuri[1]}</span>
+                }, []);
+                }              
               </form>
             </div>
             <div className="mt-10 mb-10">
