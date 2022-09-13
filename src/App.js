@@ -178,7 +178,7 @@ function App() {
 //            }
         result.map((item, index)=>{
                     console.log('key is:- ', item[0], ' and value is:- ', item[1]);
-                    render.push({`${result[count][0]}`: `${result[count][1]}`}); 
+                    render.push({`${item[0]}`: `${item[1]}`}); 
               }, []);
         setReturnedtokens(render);
       } else {
