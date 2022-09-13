@@ -173,7 +173,7 @@ function App() {
         let count = 0;
         let render = {};
         for (count  ; count <= obs ; ++count){
-              console.log(`${result[count]}: ${result[count][0]}`,);
+              console.log(`${result[count][0]}: ${result[count][1]}`,);
              render = `${result[count][0]}: ${result[count][1]},`;                       
            }
         setReturnedtokens(render);
