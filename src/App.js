@@ -169,15 +169,14 @@ function App() {
         setReturnedtokens("Returning.....");
         console.log(tokens);
         let result = Object.entries(tokens);
-        let obs = result.length();
-        setReturnedtokens(result);
-            result.map((item, index)=>{
+        let obs = result.length;
+
                  console.log('key is:- ', item[0], ' and value is:- ', item[1]);
                         for (count = 0 ; count <= obs ; ++count){
-                             console.log([{`${result[count]}`: `${result[count][0]}`}]);
-                               setReturnedtokens(`${result[count]}`: `${result[count][0]}`,);                       
+                             console.log(`${result[count]}: ${result[count][0]}`,);
+                               setReturnedtokens(`${result[count]}: ${result[count][0]}`,);                       
                         }
-              });        
+       
       } else {
         console.log("Ethereum object not found, install Metamask.");
         setError("Install a MetaMask wallet to mint an Expressive NFT.");
