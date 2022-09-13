@@ -173,12 +173,9 @@ function App() {
         setReturnedtokens(result);
             result.map((item, index)=>{
                  console.log('key is:- ', item[0], ' and value is:- ', item[1]);
-                       let obs = data.obj.obs;
-                        let c_num = 0
-                        let imgs = data.obj.u_img;
                         for (count = 0 ; count <= obs ; ++count){
-                             console.log([{`${result[count]}`: `${result[count][0]}`}])
-                               setReturnedtokens(`${result[count]}`: `${result[count][0]}`,)                       
+                             console.log([{`${result[count]}`: `${result[count][0]}`}]);
+                               setReturnedtokens(`${result[count]}`: `${result[count][0]}`,);                       
                         }
               });        
       } else {
