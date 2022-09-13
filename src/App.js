@@ -169,11 +169,10 @@ function App() {
         setReturnedtokens("Returning.....");
         console.log(tokens);
         let result = Object.entries(tokens);
+        setReturnedtokens(result);
             result.map((item, index)=>{
                     console.log('key is:- ', item[0], ' and value is:- ', item[1]);
-                    setReturnedtokens(` ${item[0]} => ${item[1]},`);
-              }, []);
-        
+              });        
       } else {
         console.log("Ethereum object not found, install Metamask.");
         setError("Install a MetaMask wallet to mint an Expressive NFT.");
@@ -422,7 +421,13 @@ function App() {
                   onClick={TokenUri}>
                  Get Token Uri
                 </button>
-              <span className="mr-5"><strong></strong> {returnedtokenuri} </span>
+                {
+                  returnedtokenuri.map((item, index)=>{
+                    console.log('key is:- ', item[0], ' and value is:- ', item[1]);
+                    <span className="mr-5"><strong></strong> {item[0]} => {item[1]}</span>
+                    });
+                }
+              
               </form>
             </div>
             <div className="mt-10 mb-10">
