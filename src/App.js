@@ -430,13 +430,13 @@ function App() {
                   onClick={TokenUri}>
                  Get Token Uri
                 </button>
-                {
+                
                   returnedtokenuri.map((returnedtokenuri)=>{
 
                         
                   <span className="mr-5"><strong></strong> {returnedtokenuri[0]}:{returnedtokenuri[1]}</span>
                 }, []);
-                }              
+                        
               </form>
             </div>
             <div className="mt-10 mb-10">
