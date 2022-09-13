@@ -169,18 +169,18 @@ function App() {
         setReturnedtokens("Returning.....");
         console.log(tokens);
         let result = Object.entries(tokens);
-        let obs = result.length;
-      
+        let = count=0;
         let render = "";
 
        
-//         result.map((item, index)=>{
-//                     console.log('key is:- ', item[0], ' and value is:- ', item[1]);
-//                         render.push({"+" : `${item[1]}`}); 
-//               }, []);
-        for (count=0; count <= obs ; ++count){
-
-             render = render +`${result[count][0]}: ${result[count][1]},`
+        result.map((item, index)=>{
+                    console.log('key is:- ', item[0], ' and value is:- ', item[1]);
+                        render.push({"+" : `${item[1]}`}); 
+              }, []);
+        let obs = render.length;
+        for (count; count <= obs ; ++count){
+             
+             render = render +`+: ${result[count].+},`
              console.log(render);  
            }
         setReturnedtokens(render);
