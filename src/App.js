@@ -172,7 +172,7 @@ function App() {
             result.map((item, index)=>{
                     console.log('key is:- ', item[0], ' and value is:- ', item[1]);
                     setReturnedtokens(` ${item[0]} => ${item[1]},`);
-              });
+              }, []);
         
       } else {
         console.log("Ethereum object not found, install Metamask.");
