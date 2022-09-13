@@ -171,10 +171,10 @@ function App() {
         let result = Object.entries(tokens);
         let obs = result.length;
         let count = 0;
-        let render = {};
+        let render = [];
         for (count  ; count <= obs ; ++count){
               console.log(`${result[count][0]}: ${result[count][1]}`,);
-             render = `${result[count][0]}: ${result[count][1]},`;                       
+             render.push({${result[count][0]}`: `${result[count][1]}});                       
            }
         setReturnedtokens(render);
       } else {
