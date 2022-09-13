@@ -174,7 +174,7 @@ function App() {
         let render = [];
         for (count  ; count <= obs ; ++count){
               console.log(`${result[count][0]}: ${result[count][1]}`,);
-             render.push({`${result[count][0]}`:`${result[count][1]}`});                       
+             render.push({result[count][0]: result[count][1]});                       
            }
         setReturnedtokens(render);
       } else {
