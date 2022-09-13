@@ -87,7 +87,7 @@ function App() {
         const nftContract = new ethers.Contract(contractAddress, contractABI, signer);
 
         //INSERT THE CID FROM PINATA FROM YOUR JSON FOLDER HERE
-        const metadataURI = `${uri}/${tokenId}.json`
+        const metadataURI = `${uri}`
         console.log(metadataURI);
         const txn = await nftContract.safeMint(yourWalletAddress, metadataURI, {
           value: ethers.utils.parseEther('0.001'),
@@ -171,7 +171,7 @@ function App() {
         let result = Object.entries(tokens);
             result.map((item, index)=>{
                     console.log('key is:- ', item[0], ' and value is:- ', item[1]);
-                    setReturnedtokens(` ${item[0]}, ${item[1]}`);
+                    setReturnedtokens(` ${item[0]} => ${item[1]},`);
               });
         
       } else {
