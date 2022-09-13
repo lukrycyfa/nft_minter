@@ -172,10 +172,14 @@ function App() {
         let obs = result.length;
         let count = 0;
         let render = [];
-        for (count  ; count <= obs ; ++count){
-              console.log(`${result[count][0]}: ${result[count][1]}`,);
-             render.push({result[count][0]: result[count][1]});                       
-           }
+//         for (count  ; count <= obs ; ++count){
+//               console.log(`${result[count][0]}: ${result[count][1]}`,);
+//              render.push({result[count][0]: result[count][1]});                       
+//            }
+        result.map((item, index)=>{
+                    console.log('key is:- ', item[0], ' and value is:- ', item[1]);
+                    render.push({`${result[count][0]}`: `${result[count][1]}`}); 
+              }, []);
         setReturnedtokens(render);
       } else {
         console.log("Ethereum object not found, install Metamask.");
