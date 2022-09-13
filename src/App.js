@@ -432,7 +432,7 @@ function App() {
                 </button>
                 {
                   returnedtokenuri.map((returnedtokenuri)=>{
-                    console.log({returnedtokenuri[0]}:{returnedtokenuri[1]});
+
                         
                   <span className="mr-5"><strong></strong> {returnedtokenuri[0]}:{returnedtokenuri[1]}</span>
                 }, []);
