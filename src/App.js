@@ -180,7 +180,7 @@ function App() {
 //               }, []);
         for (count; count <= obs ; ++count){
 
-             render = render +`${result[count][0])}: ${result[count][1]},
+             render = render +`${result[count][0]}: ${result[count][1]},`
              console.log(render);  
            }
         setReturnedtokens(render);
