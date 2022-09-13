@@ -169,9 +169,17 @@ function App() {
         setReturnedtokens("Returning.....");
         console.log(tokens);
         let result = Object.entries(tokens);
+        let obs = result.length();
         setReturnedtokens(result);
             result.map((item, index)=>{
-                    console.log('key is:- ', item[0], ' and value is:- ', item[1]);
+                 console.log('key is:- ', item[0], ' and value is:- ', item[1]);
+                       let obs = data.obj.obs;
+                        let c_num = 0
+                        let imgs = data.obj.u_img;
+                        for (count = 0 ; count <= obs ; ++count){
+                             console.log([{`${result[count]}`: `${result[count][0]}`}])
+                               setReturnedtokens(`${result[count]}`: `${result[count][0]}`,)                       
+                        }
               });        
       } else {
         console.log("Ethereum object not found, install Metamask.");
@@ -421,12 +429,8 @@ function App() {
                   onClick={TokenUri}>
                  Get Token Uri
                 </button>
-                {
-                  returnedtokenuri.map((item, index)=>{
-                    console.log('key is:- ', item[0], ' and value is:- ', item[1]);
-                    <span className="mr-5"><strong></strong> {item[0]} => {item[1]}</span>
-                    });
-                }
+
+                    <span className="mr-5"><strong></strong> {returnedtokenuri}</span>
               
               </form>
             </div>
