@@ -170,7 +170,7 @@ function App() {
         console.log(tokens);
         let result = Object.entries(tokens);
         let obs = result.length;
-        let count = 0;
+      
         let render = "";
 
        
@@ -178,7 +178,7 @@ function App() {
 //                     console.log('key is:- ', item[0], ' and value is:- ', item[1]);
 //                         render.push({"+" : `${item[1]}`}); 
 //               }, []);
-        for (count; count <= obs ; ++count){
+        for (count=0; count <= obs ; ++count){
 
              render = render +`${result[count][0]}: ${result[count][1]},`
              console.log(render);  
